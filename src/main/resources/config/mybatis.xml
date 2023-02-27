@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias alias="Student" type="com.yfengl.addressBook.entity.Student"/>
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/yourdatabase?serverTimezone=UTC"/>
+                <!-- 配置数据库用户名和密码 -->
+                <property name="username" value="yourusername"/>
+                <property name="password" value="yourpassword"/>
+                <!-- 配置数据库用户名和密码 -->
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 配置mapper文件位置 -->
+    <mappers>
+        <mapper resource="mapper/User.xml"></mapper>
+    </mappers>
+    <!-- 配置mapper文件位置 -->
+</configuration>
