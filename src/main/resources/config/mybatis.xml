@@ -11,10 +11,10 @@
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
                 <property name="url"
-                          value="jdbc:mysql://localhost:3306/yourdatabase?serverTimezone=UTC"/>
+                          value="jdbc:mysql://localhost:3306/programe?serverTimezone=UTC"/>
                 <!-- 配置数据库用户名和密码 -->
-                <property name="username" value="yourusername"/>
-                <property name="password" value="yourpassword"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
                 <!-- 配置数据库用户名和密码 -->
             </dataSource>
         </environment>
